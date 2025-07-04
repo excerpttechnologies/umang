@@ -1,0 +1,87 @@
+
+.box_post_solar{
+/* padding: 80px; */
+padding-left: 80px;
+padding-right: 80px;
+}
+
+
+
+
+
+
+.paragraph-container-solar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.image-container-solar {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.image-container-solar img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-container-solar {
+  flex: 2;
+}
+
+.text-container-solar p {
+  margin: 0;
+  line-height: 1.8;
+  color: #0f253b;
+}
+
+
+.solardiamnd_paragraph{
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-top: -200px;
+}
+
+.solardiamnd_paragraph_Dressers{
+display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-top: -230px;
+}
+
+
+@media screen and (max-width: 567px) {
+   .box_post_solar{
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+
+   .image-container-solar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   }
+
+   .solardiamnd_paragraph_Dressers{
+    display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
+    .paragraph-container-solar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+     /* height: 200px; */
+  }
+}

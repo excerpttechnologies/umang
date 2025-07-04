@@ -1,0 +1,74 @@
+.caltex-hand-tools {
+    font-family: Montserrat, sans-serif;
+    /* height: 900px; */
+  }
+  
+  .image.left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .image.left img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .feature-separator {
+    border: 0;
+    border-top: 2px solid #000;
+    margin: 20px 0;
+  }
+  
+  h2, h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .responive_othercut{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+
+
+@media screen and (max-width: 567px) {
+   .responive_othercut{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .resposnive_other_width{
+     width: 39%;
+   }
+
+ 
+}  
+
+.resposnive_other_width{
+  width: 50%;
+}
+
+/* .chart-container-cat{
+  height: 330px;
+} */
+
+.caltex-cut-sree{
+margin-left:10px ;
+
+}
+.my_chart{
+  /* height: 700px; */
+  padding: 10px;
+}

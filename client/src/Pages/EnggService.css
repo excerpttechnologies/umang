@@ -1,0 +1,119 @@
+/* EnggService.css */
+
+/* Global Styles */
+body {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  a {
+    color: #1976d2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Wrapper */
+  #main-wrapper {
+    padding: 20px;
+  }
+  
+  /* Container */
+  .MuiContainer-root {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Card Styles */
+  .MuiCard-root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .MuiCard-root:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Typography Styles */
+  .MuiTypography-root {
+    margin-bottom: 16px;
+  }
+  
+  .MuiTypography-h4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .MuiTypography-h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .MuiTypography-body1 {
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 16px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  /* Image Styles */
+  .MuiCardMedia-root {
+    height: 0;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    /* Adjust typography for smaller screens */
+    .MuiTypography-h4 {
+      font-size: 24px;
+    }
+  
+    .MuiTypography-h5 {
+      font-size: 20px;
+    }
+  
+    .MuiTypography-body1 {
+      font-size: 14px;
+    }
+  
+    /* Adjust card layout for mobile */
+    .MuiCard-root {
+      margin-bottom: 20px;
+    }
+  
+    /* Adjust image aspect ratio for mobile */
+    .MuiCardMedia-root {
+      padding-top: 75%; /* 4:3 aspect ratio */
+    }
+  
+    /* Adjust padding for mobile */
+    #main-wrapper {
+      padding: 10px;
+    }
+  
+    /* Full width cards on mobile */
+    .MuiGrid-item {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }

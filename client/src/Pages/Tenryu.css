@@ -1,0 +1,246 @@
+/* Tenryu.css */
+
+
+/* Cutting Info Section */
+.cutting-info-container {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cutting-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  margin: 10px;
+  padding: 40px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.left-section:hover,
+.right-section:hover {
+  transform: translateY(-10px);
+}
+
+.needs h2,
+.solution h2,
+.pas-brand h4 {
+  color: #004a62;
+  transition: color 0.3s ease;
+}
+
+.needs h2:hover,
+.solution h2:hover,
+.pas-brand h4:hover {
+  color: #ff7f50;
+}
+
+.resharpening-info img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.resharpening-info img:hover {
+  transform: rotate(10deg) scale(1.05);
+}
+
+
+
+.tenryu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.spec-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.spec-list li {
+  margin-bottom: 10px;
+}
+
+.spec-list strong {
+  color: var(--dark-blue);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.feature-separator {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 20px 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--dark-blue);
+}
+
+
+Image Container Styles with Hover Effects
+
+.img_container_tenryu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.img_container_tenryu img {
+  width: 450px;
+  height: 300px;
+  margin-left: 50px;
+  border: 3px solid #004a62;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effects */
+.img_container_tenryu img:hover {
+  transform: scale(1.05); /* Zoom effect - adjust scale value as needed */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Optional: adds depth on hover */
+  border-color: #0077a2; /* Optional: changes border color on hover */
+}
+
+
+
+@media screen and (max-width: 568px) {
+  .img_container_tenryu img {
+    width: 100%; /* Adjust the width for the images */
+    height: 300px;
+    margin-left: 0px;
+    border: 3px solid #004a62; /* Adds a solid border */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .cutting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .resposnive_tenryu_tct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+
+  .itiranbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .shohin_yoto{
+    margin-left: 0px;
+    }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .resposnive_tenryu_tct{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+  }  
+
+  .itiranbox{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    
+  }
+
+  .shohin_yoto{
+    margin-left: 120px;
+    }
+
+}
+
+

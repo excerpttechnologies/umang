@@ -1,0 +1,217 @@
+/* General Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+/* Popup Box Styling */
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+ background-image: url('/public/img/44.png');     
+ background-repeat: no-repeat, repeat;
+  background-size: contain;
+  background-position: right bottom, left top;
+}
+ 
+/* .popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+} */
+
+.popup .close-icon {
+  color: red;
+  font-size: 40px;
+  cursor: pointer;
+  /* margin-top: -90px; */
+margin-right: 10px;
+
+}
+@media screen and (max-width: 768px) {
+  .popup .close-icon {
+    font-size: 30px; /* Reduce font size for smaller screens */
+    color: blue; /* You can also change color if needed */
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 0px;
+  }
+
+  .responive_logogif_karthik{
+      width: 230px;
+  }
+}
+
+
+
+.popupcontainer {
+  display: flex;
+  padding-top: 90px;
+  justify-content: space-between;
+}
+
+.popupimage {
+  height: auto;
+  width: auto;
+  border-radius: 7px;
+  margin-top: -20px;
+}
+
+.popupcontent {
+  height: 100%;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.popheading {
+  font-size: 35px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.popupparagraph {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+}
+
+.new_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image_pipup_container {
+  height: 40px;
+  overflow-y: scroll;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .popup {
+    padding: 15px;
+    max-width: 95%;
+    height: auto; 
+  }
+  .popup .close-icon {
+      position: absolute;
+      top: 40px;
+      left: 10px;
+    }
+
+  .popupcontainer {
+    flex-direction: column; 
+  }
+
+
+.popupimage {
+  width: 240px; 
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+  .popupcontent {
+    margin-left: 0; 
+  }
+
+  .popheading {
+    font-size: 24px; 
+    text-align: center; 
+  }
+
+  .popupparagraph {
+    font-size: 18px; 
+    text-align: center;
+  }
+
+  .new_container {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+ 
+  .type-animation {
+    font-size: 1.5em; 
+  }
+
+
+  .marquee {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+@keyframes karthik12-fade-right-corner {
+  0% {
+    opacity: 0;
+    transform: translateX(100vw); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+.karthik12-fade-right-corner {
+  animation: karthik12-fade-right-corner 2s ease-in-out forwards; 
+  position: relative;
+}
+
+
+@keyframes karthik12-fade-left-bottom {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw) translateY(100vh); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0); 
+  }
+}
+
+.karthik12-fade-left-bottom {
+  animation: karthik12-fade-left-bottom 2s ease-in-out forwards;
+  position: relative;
+}
+
+
+
+@keyframes karthik12-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.karthik12-fade-up {
+  animation: karthik12-fade-up 2s ease-in-out forwards; 
+  position: relative;
+}

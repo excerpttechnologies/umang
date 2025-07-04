@@ -1,0 +1,71 @@
+@media (max-width: 768px) {
+    /* Adjust the map size for mobile devices */
+    iframe {
+      height: 250px !important;
+    }
+  
+    /* Footer column spacing adjustments for mobile */
+    .footer .col-md-6, .footer .col-lg-6, .footer .col-xl-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Adjust the padding and spacing in the footer for mobile */
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    .footer-item h4, .footer-item h3 {
+      font-size: 18px;
+    }
+  
+    .footer-item p, .footer-item a {
+      font-size: 14px;
+    }
+  
+    .footer-item a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    /* For the copyright and design section on mobile */
+    .copyright .col-md-6 {
+      text-align: center;
+    }
+  
+    .copyright .col-md-6 span {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .copyright .col-md-6 a {
+      font-size: 14px;
+    }
+  
+    /* Reduce padding for the back-to-top button */
+    .back-to-top {
+      padding: 10px;
+      font-size: 18px;
+    } 
+
+    .responive_new_footer{
+         margin-left: "30px";
+    }
+
+    .resposnive_address_new{
+      margin-left: -80px;
+    }
+  }
+  
+
+
+
+@media screen and (max-width: 568px){
+  .resposnive_footer{
+     margin-right: 30px;
+  }
+  .resposnive_address_new{
+    margin-left: 0px;
+  }
+}

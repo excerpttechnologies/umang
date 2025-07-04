@@ -1,0 +1,210 @@
+.mbb-444{
+    text-align: justify;
+}
+
+
+/* cad */
+ /* General image styles for all screens */
+ .res-img1, .res-img2, .res-img3, .res-img4, .res-img5, .res-img6, .res-img7 {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Maintain aspect ratio */
+  max-width: 100%; /* Responsive width */
+  background-color: white;
+  border-radius: 7px;
+}
+
+/* Desktop-specific dimensions */
+.res-img1 {
+  height: 150px;
+  width: 220px;
+}
+
+.res-img2 {
+  height: 150px;
+  width: 300px;
+}
+
+.res-img3 {
+  height: 150px;
+  width: 250px;
+}
+
+.res-img4 {
+  height: 150px;
+  width: 280px;
+}
+
+.res-img5 {
+  height: 150px;
+  width: 240px;
+}
+
+.res-img6 {
+  height: 150px;
+  width: 280px;
+}
+
+.res-img7 {
+  height: 150px;
+  width: 210px;
+}
+
+.mee_responive{
+  width: 85vw;
+}
+
+.resposnive_new_slider{
+   padding-left: 100px;
+   padding-right: 100px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .header-btClear-large-our-clients {
+      padding: 10px;
+  }
+
+  .res-img1, .res-img2, .res-img3, .res-img4, .res-img5, .res-img6, .res-img7 {
+      height: auto;
+      width: 100%;
+      max-width: 150px; /* Adjust max width for mobile */
+      margin: 10px auto;
+      background-color: white;
+      border-radius: 7px;
+  }
+
+  .btSubTitle-client {
+      font-size: 14px;
+      margin: 10px 0;
+  }
+
+  .responive_Tabs{
+     width: 120px;
+  }
+
+  .mee_responive{
+    width: 100%;
+  }
+
+  .resposnive_new_slider{
+    padding-left: 2px;
+    padding-right: 2px;
+ }
+}
+
+.responive_Tabs{
+  width: 150px;
+}
+/* Styles for back-to-top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  /* background-color: #007bff; */
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+/* certificares */
+/* Basic styling for the header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Styling for the certificates section */
+.cert1 {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+figure.snip1179 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 250px;
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+figure.snip1179 img {
+  max-width: 100%;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Hover effect for image */
+figure.snip1179:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Styling for the caption overlay */
+figure.snip1179 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #000000;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+figure.snip1179:hover figcaption {
+  opacity: 1;
+}
+
+figure.snip1179 figcaption div {
+  color: white;
+  font-size: 2em;
+}
+
+/* Add different background colors for the hover based on class (red, blue) */
+figure.snip1179.red figcaption {
+  background: rgb(237 158 77 / 2%);
+}
+
+figure.snip1179.blue figcaption {
+  background: rgb(237 158 77 / 2%);
+}
+
+/* Flexbox for the section */
+section.cert1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

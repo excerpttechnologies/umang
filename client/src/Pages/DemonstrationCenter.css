@@ -1,0 +1,88 @@
+/* DemonstrationCenter.css */
+
+/* Override Material-UI styles and add custom styles */
+
+#main-wrapper {
+    padding: 20px;
+  }
+  
+  .content h2,
+  .sidebar h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .res-text-container{
+    text-align: justify;
+  }
+  
+  /* Custom styles for links */
+  a {
+    color: #1976d2;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile view adjustments */
+  @media screen and (max-width: 768px) {
+    #main-wrapper {
+      padding: 10px;
+    }
+  
+    .MuiTypography-h4 {
+      font-size: 24px;
+    }
+  
+    .MuiTypography-body1 {
+      font-size: 14px;
+    }
+  
+    .content,
+    .sidebar {
+      margin-bottom: 20px;
+    }
+  
+    .image-container {
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* Override Material-UI Card styles */
+  .MuiCard-root {
+    background-color: #fff;
+  }
+  
+  .MuiCardContent-root {
+    padding: 16px;
+  }
+  
+  /* Override Material-UI Typography styles */
+  .MuiTypography-gutterBottom {
+    margin-bottom: 12px;
+  }
+  
+  /* Custom styles for image captions */
+  .MuiTypography-caption {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+  
+  /* Specific styles for the sidebar image */
+  .sidebar .image-container {
+    margin-bottom: 0;
+  }

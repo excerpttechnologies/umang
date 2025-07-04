@@ -1,0 +1,276 @@
+import React from 'react'
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+import './About.css';
+
+const About = () => {
+
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4, // Adjust based on how many slides you want to show
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 768, // Mobile view adjustments
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 480, // Smaller mobile view adjustments
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+      };
+
+    
+  return (
+    <div>
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center bg-primary">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1"/>
+                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style={{maxWidth: "900px"}}>
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    {/* <li class="breadcrumb-item"><a href="#">Pages</a></li> */}
+                    <li class="breadcrumb-item active text-primary">About</li>
+                </ol>    
+            </div>
+        </div>
+      
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="h-100">
+                            <h4 class="text-primary">About Us</h4>
+                            <h1 class="display-4 mb-4">Enhancing Experiences with High-Quality Features</h1>
+                            
+                            <p class="mb-4" style={{textAlign:'justify'}}>Umang Marketing is an Engineerig Enterprise, established in the year 1993, is a premier partner of Wikus Germany, Tenryu Japan and Singular Taiwan in machine sawing solutions.
+With a passion for precision and efficiency, we specialize in delivering cutting-edge technology for all your sawing needs.
+Backed by a team of experts and engineers, we are committed to providing top-notch products and services, ensuring your success in every cut.
+Along with metal sawing solutions we also channel partners of Solar Diamond Tools for diamond tool applications.</p>
+
+<strong style={{color:'black', fontSize:'20px'}}>Our Expertise and Commitment</strong>
+
+<p style={{textAlign:'justify'}}>We pride ourselves on our team of qualified professionals, engineers, executives, and experienced staff who are committed to meeting the diverse needs of our valued customers. As exclusive channel partners in Bangalore, we represent some of the world's most renowned brands in the engineering sector.</p>
+                        
+                            <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="/contact">Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="position-relative h-100">
+                            <img src="img/about-1.jpg" class="img-fluid w-100 h-100" style={{objectFit: "cover", alt:""}}/>
+                            <div class="bg-white">
+                              
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+         <div class="container-fluid banner py-5 wow zoomIn" data-wow-delay="0.2s">
+            <div class="banner-design-1"></div>
+            <div class="banner-design-2"></div>
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-8">
+                        <div class="">
+                            <h4 class="text-white">Contact With Me</h4>
+                            <h1 class="display-4 text-white mb-0">We Provide Professional  Umang Engineering Services for our customer</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center justify-content-lg-end h-100">
+                            <a class="btn btn-primary py-3 px-4 px-md-5 ms-2" href="#">EXPLORE MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        
+<br/><br/>
+       
+     
+
+
+
+
+
+
+
+
+         <div class="container-fluid projects bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-primary" style={{fontSize:'20px'}}>Our Esteemed Channel Partners</h4>
+                            <h1 class="display-4 mb-4">Expert Metal Cutting for Diverse Industries</h1>
+                            <p class="mb-5">Umang Engineering offers cutting-edge metal cutting solutions with advanced, fully automatic Everising band saw and circular saw machines, serving industries such as automobile, aerospace, machine tool, and forging.</p>
+                            <ul class="nav" style={{marginBottom:'-20px'}}>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3 active" data-bs-toggle="pill" href="#ProjectsTab-1">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Wikus - Germany</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-2">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-charging-station small"></span></div><span>Tenryu - Japan</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-3">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-broadcast-tower small"></span></div><span>Singular</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item bg-white mb-4 w-100">
+                                    <a class="d-flex align-items-center h4 mb-0 p-3" data-bs-toggle="pill" href="#ProjectsTab-4">
+                                        <div class="projects-icon btn-md-square bg-primary text-white me-3"><span class="fas fa-bolt small"></span></div><span>Solar Diamond Tools - Mumbai</span>
+                                    </a>
+                                </li>
+                               
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.2s" style={{marginTop:'100px'}}>
+                        <div class="tab-content">
+                            <div id="ProjectsTab-1" class="tab-pane fade show p-0 active">
+                                <div class="projects-item">
+                                    <img src="./img/WIKUS.jpg" class="img-fluid w-100" alt=""/>
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Wikus - Germany</h4>
+                                        <p class="mb-4">Specializing in Bimetal Band Saw Blades, Carbide Tipped Band Saw Blades, and Diamond Coated Band Saw Blades.
+                                        </p>
+                                        <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-2" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <img src="./img/Tenryuu.png" class="img-fluid w-100" style={{height:"400px",width:"250px"}} alt=""/>
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Tenryu - Japan</h4>
+                                        <p class="mb-4">Experts in TCT Coated and Uncoated Cutters, HSS Coated and Uncoated Cutters, and Slitting Saws.
+
+                                        </p>
+                                        <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-3" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <img src="./img/s55.png" class="img-fluid w-100"   alt="" />
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Singular</h4>
+                                        <p class="mb-4">Our commitment is to bring our customers the best and most economic sawing solutions. In addition to premier brands like WIKUS and TENRYU, we have partnered with a leading sawing machine manufacturer from Taiwan , SINGULAR Machinery. 
+                                        </p>
+                                        <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ProjectsTab-4" class="tab-pane fade show p-0">
+                                <div class="projects-item">
+                                    <img src="./img/solarr.png" class="img-fluid w-100" style={{height:"400px",width:"250px"}} alt=""/>
+                                    <div class="projects-content bg-white p-4">
+                                        <h4 class="mb-3">Solar Diamond Tools - Mumbai</h4>
+                                        <p class="mb-4">Offering Single Point and Multipoint Diamond Dressors, Diamond Wheels, Honing Sticks, PCD, and CBN Inserts.
+                                        </p>
+                                        <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section>
+      <h2>
+        <span className="headline" id="responsive-HomeHead">Our Customers</span>
+      </h2>
+      <header className="header-btClear-large-our-clients">
+        <div className="dash cl1"></div>
+
+        {/* Customer Slider */}
+        <Slider {...settings}>
+          
+          <div>
+  <a href="https://sansera.in" target="_blank" rel="noopener noreferrer">
+    <img src="./img/senseraa.png" alt="Sensera" className="res-img1" />
+  </a>
+</div>
+
+          <div>
+          <a href="https://www.sundram.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/ttt111.png" alt="TTT11" className='res-img2' />
+            </a>
+          </div>
+          <div>
+          <a href="https://hal-india.co.in/home" target="_blank" rel="noopener noreferrer">
+            <img src="./img/Hall.png" alt="HAL" className='res-img3' /></a>
+          </div>
+          <div>
+          <a href="https://www.mahindra.com" target="_blank" rel="noopener noreferrer">
+            <img src="./img/mahindraa.png" alt="Mahindra" className='res-img4' /></a>
+          </div>
+          <div>
+          <a href="https://www.tkap.com" target="_blank" rel="noopener noreferrer">
+            <img src="./img/tkapp.png" alt="TKAP" className='res-img5' /></a>
+          </div>
+          <div>
+          <a href="https://www.mainigroup.com" target="_blank" rel="noopener noreferrer">
+            <img src="./img/mainii.png" alt="Maini" className='res-img6' /></a>
+          </div>
+          <div>
+          <a href="https://bel-india.in" target="_blank" rel="noopener noreferrer">
+            <img src="./img/barathh.png" alt="Bharath" className='res-img7' /></a>
+          </div>
+        </Slider>
+      </header>
+
+    
+    </section>
+  
+<br/><br/>
+     
+        
+       
+    </div>
+  )
+}
+
+export default About
